@@ -2,12 +2,16 @@ import kivy
 from kivy.app import App
 import os
 
+from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.properties import StringProperty
 from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
+
+class RoundedButton(Button):
+    pass
 
 # home
 class signInPage(BoxLayout):
@@ -35,7 +39,8 @@ class signInPage(BoxLayout):
                 background_down=button["bg_pressed"],
                 font_size=30,
                 color=(0,0,0,1),
-                size_hint=(1,0.15),
+                # size_hint=(0.4,0.15),
+                size=(100,20),
             )
             self.button.bind(on_press=button["callback"])
             self.add_widget(self.button)
@@ -81,7 +86,7 @@ class registerPage(BoxLayout):
                 background_down=button["bg_pressed"],
                 font_size=30,
                 color=(0,0,0,1),
-                size_hint=(0.5,0.3),
+                size_hint=(0.4,1),
             )
             self.button.bind(on_press=button["callback"])
             self.add_widget(self.button)
