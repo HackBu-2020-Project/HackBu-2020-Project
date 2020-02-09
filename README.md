@@ -3,6 +3,8 @@
   Ethan Huang, Marleen Moise, Daphnie Sainvilus, Max Samson
 
 ## Introduction
+Complete text and UI featured in Powerpoint. 
+
   Finding grant applications is a hard process to begin with — non-profits often struggle to find clear information about granting opportunities from statewide, national, and local foundations
 
   For many small non-profits, the best source of grant money is within the local community through local community foundations, but finding these foundations can be elusive.
