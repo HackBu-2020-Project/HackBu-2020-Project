@@ -9,10 +9,10 @@ from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
 
-# home page
+# home
 class signInPage(BoxLayout):
     def __init__(self, **kwargs):
-        super(signInPage,self).__init__(**kwargs)
+        super(signInPage, self).__init__(**kwargs)
         self.cols = 2
         buttons = [
             {
@@ -81,7 +81,7 @@ class registerPage(BoxLayout):
                 background_down=button["bg_pressed"],
                 font_size=30,
                 color=(0,0,0,1),
-                size_hint=(0.5,0.1),
+                size_hint=(0.5,0.3),
             )
             self.button.bind(on_press=button["callback"])
             self.add_widget(self.button)
